@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio Pessoal (CV Online)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Menu de navegação -->
+    <nav class="menu">
+        <ul>
+            <li onclick="mostrarPagina('sobre')">Sobre mim</li>
+            <li onclick="mostrarPagina('formacao')">Formação Acadêmica</li>
+            <li onclick="mostrarPagina('portfolio')">Portfólio</li>
+            <li onclick="mostrarPagina('contato')">Contato</li>
+        </ul>
+    </nav>
+
+    <!-- Página: Sobre mim -->
+    <section id="sobre" class="pagina">
+        <h1>Sobre Mim</h1>
+        <p class="texto"> Profissional com mais de 7 anos de experiência em análise, desenvolvimento e implantação de software.</p>
+        <p class="texto"> Atuei em projetos de diversos portes e em diferentes setores. Focado em melhoria contínua, com forte impulso para inovação e constante atualização em relação ao dinâmico mercado de tecnologia.</p>
+        <p class="texto"> Grande capacidade de transformar necessidades de negócio em soluções eficientes, com sólido comprometimento com prazos, qualidade e resultados. </p>
+        <p class="texto"> Aberto a novos desafios e projetos que promovam crescimento técnico e colaboração em equipes multidisciplinares.</p>
+
+    </section>
+
+    <!-- Página: Formação Acadêmica -->
+    <section id="formacao" class="pagina" style="display: none;">
+        <h1>Formação Acadêmica</h1>
+        <p class="texto">Formado como Tecnólogo em Análise e Desenvolvimento de Sistemas, com formação técnica complementar em Tecnologia da Informação e Administração. Ao longo da trajetória acadêmica, desenvolvi uma base sólida em lógica de programação, gestão de projetos e processos organizacionais.</p>
+
+        <p class="texto">Possuo diversas certificações relevantes na área de tecnologia, incluindo IBM Artificial Intelligence Fundamentals (2025), Google IT Support Professional Certificate (2024) e Oracle Java Explorer (2024). Além disso, concluí cursos de aperfeiçoamento em Gestão Financeira e Controladoria pela FGV (2020) e em HTML5, CSS3 e Linux (LPI1) pelo SENAC (2019).</p>
+
+        <p class="texto">Comunico-me fluentemente em português (nativo) e inglês (proficiente), e atualmente estou em nível iniciante nos idiomas alemão (A1) e espanhol (A1), ampliando meu repertório para atuação em ambientes multiculturais e internacionais.</p>
+
+    </section>
+
+    <!-- Página: Portfólio -->
+    <section id="portfolio" class="pagina" style="display: none;">
+        <h1>Portfólio</h1>
+       <p class="texto">Atuei como consultor de negócios em uma das maiores empresas de desenvolvimento de software voltadas ao setor de transporte rodoviário, participando ativamente da criação de soluções sob medida para clientes de todos os portes.
+</p>
+
+        <p class="texto">Durante minha jornada, estive envolvido em todas as etapas do desenvolvimento de sistemas, desde a análise de requisitos até a entrega e manutenção. Além disso, fui responsável pelo desenvolvimento e aplicação de treinamentos presenciais personalizados, adaptados à realidade e às necessidades específicas de cada cliente.
+</p>
+
+        <p class="texto">Após anos de trabalho, dedicação e aprendizado constante, fundei minha própria empresa de consultoria, ampliando ainda mais minha atuação no mundo corporativo. Atualmente, moro na Irlanda e trabalho em uma multinacional americana de tecnologia, onde sigo contribuindo com soluções inovadoras e foco em resultados.
+</p>
+
+    </section>
+
+    <!-- Página: Contato -->
+    <section id="contato" class="pagina" style="display: none;">
+        <h1>Contato</h1>
+        <div class="contato-container">
+    <!-- Formulário -->
+    <form id="formContato" class="form-contato" onsubmit="enviarFormulario(event)">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+</div>
+
+    </section>
+
+    <!-- Rodapé do site -->
+<footer class="rodape">
+    Murilo Camatari | 2025
+</footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
